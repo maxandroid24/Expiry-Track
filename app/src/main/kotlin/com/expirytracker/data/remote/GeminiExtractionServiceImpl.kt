@@ -16,10 +16,7 @@ class GeminiExtractionServiceImpl @Inject constructor(
 
     private val model = GenerativeModel(
         modelName = "gemini-1.5-flash",
-        apiKey = apiKey,
-        generationConfig = generationConfig {
-            responseMimeType = "application/json"
-        }
+        apiKey = apiKey
     )
 
     private val prompt = """
