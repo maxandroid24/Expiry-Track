@@ -8,7 +8,7 @@ import dagger.hilt.android.HiltAndroidApp
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
-@HiltWorkerApp
+@HiltAndroidApp
 class ExpiryTrackerApp : Application(), Configuration.Provider {
 
     @Inject lateinit var workerFactory: HiltWorkerFactory
@@ -39,5 +39,3 @@ class ExpiryTrackerApp : Application(), Configuration.Provider {
         )
     }
 }
-
-annotation class HiltWorkerApp

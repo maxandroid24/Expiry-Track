@@ -35,6 +35,12 @@ object AppModule {
 
     @Provides
     @Singleton
+    fun provideProductRepository(impl: ProductRepositoryImpl): ProductRepository {
+        return impl
+    }
+
+    @Provides
+    @Singleton
     fun provideAiExtractionService(): com.expirytracker.data.remote.AiExtractionService {
         val apiKey = System.getenv("GEMINI_API_KEY") ?: ""
         return com.expirytracker.data.remote.GeminiExtractionServiceImpl(apiKey)
