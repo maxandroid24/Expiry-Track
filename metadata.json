@@ -1,0 +1,6 @@
+{
+  "name": "Expiry Tracker",
+  "description": "A modern Android application to track product expiry dates with AI-powered OCR extraction and automated reminders.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["AI OCR", "Notifications", "Offline-first"]
+}
